@@ -71,14 +71,14 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
         id: 't2',
         title: 'Weekly groceries',
         amount: 24.75,
-        date: DateTime.fromMillisecondsSinceEpoch(1679347820 * 1000)),
+        date: DateTime.now().subtract(const Duration(days: 1))),
     Transaction(
         id: 't3', title: 'New monitor', amount: 169.99, date: DateTime.now()),
     Transaction(
         id: 't4',
         title: 'Weekly ciggies',
         amount: 24.75,
-        date: DateTime.fromMillisecondsSinceEpoch(1679343850000)),
+        date: DateTime.now().subtract(const Duration(days: 2))),
   ];
 
   bool _showChart = false;
